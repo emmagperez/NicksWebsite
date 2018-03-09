@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+ 
+div.gallery:hover {
+    border: 1px solid #777;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    position: relative;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+}
+.w3-lobster {
+    font-family: "Lobster", serif;
+}
+ 
+ 
+ 
+</style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+ 
+<!-- Navigation Bar -->
+<nav class = "w3-bar w3-border w3-card-4 w3-light-grey">
+    <a href= "#Home" class = "w3-button w3-bar-item">Home</a>
+    <a href = "#Gallery" class = "w3-button w3-bar-item">Gallery</a>
+    <a href = "#Services" class = "w3-button w3-bar-item">Services</a>
+    <a href = "#MakeAppointment" class = "w3-button w3-bar-item">Make an Appointment</a>
+    <a href = "#AboutMe" class = "w3-button w3-bar-item">About</a>
+    <a href = "#Contact" class = "w3-button w3-bar-item">Contact</a>
+</nav>
+ 
+<!-- Heading -->
+<h1>Services</h1>
+ 
+<!-- Gallery Options -->
+<section class = "w3-row-padding w3-center">
+<div class = "responsive">
+    <div class = "gallery">
+        <a target = "_blank" href = "wedding.jpg">
+            <div class="container w3-lobster">
+                <img src="wedding.jpg" alt="wedding" width="300" height="200">
+                <div class = "center">Wedding Photography</div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class = "responsive">
+    <div class = "gallery">
+        <a target = "_blank" href = "sports.jpg">
+            <div class="container w3-lobster">
+                <img src="sports.jpg" alt="sports" width="300" height="200">
+                <div class = "center">Sport Casting</div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class = "responsive">
+    <div class = "gallery">
+        <a target = "_blank" href = "family.jpg">
+            <div class="container w3-lobster">
+                <img src="family.jpg" alt="family" width="300" height="200">
+                <div class = "center">Family Photos</div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class = "responsive">
+    <div class = "gallery">
+        <a target = "_blank" href = "editing2.jpg">
+            <div class="container w3-lobster">
+                <img src="editing2.jpg" alt="editing" width="300" height="200">
+                <div class = "center">Video Editing</div>
+            </div>
+        </a>
+    </div>
+</div>
+</section>
+ 
+<!-- Description Section -->
+<section class = "w3-row-padding w3-center w3-margin-top" style="background-color:rgb(153, 0, 0)">
+    <h2>Description here</h2>
+</section>
+</body>
+</html>
